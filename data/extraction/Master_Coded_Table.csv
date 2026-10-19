@@ -1,0 +1,316 @@
+Title,Authors,Year,DOI link,Survey_Category,Contamination_Category,Survey_Population_Countries,Predicted_Variable_Categories,LLM_Model_Families,LLM_Model_Source,OpenAI_Specific_Models,Llama_Specific_Models,Persona_Construction_Strategy,FineTuning_Training_Data_Types,Prompting_Input_Types,Demographic_Input_Types,Training_Dataset,Training_Dataset_Size,Training_Dataset_Size_Numbers,Alignment_Level,Evaluation_Metric_Categories_x,Evaluation_Metrics_x,Evaluation_Metric_Categories_y,Evaluation_Metrics_y,Relational_Alignment,LLM_Capability_Result
+Adaptive political surveys and GPT-4: Tackling the cold start problem with simulated user interactions,"Bachmann, Fynn, Weijden, Daan van der, Heitz, Lucien, Sarasua, Cristina, Bernstein, Abraham",2025,https://doi.org/10.1371/journal.pone.0322690,Established Surveys,A: Not addressed,Switzerland,"Political Attitudes, Values and Behaviors",OpenAI GPT Family,Only Closed Source,GPT-4,,Prompt Engineering,,Self-reported data:  Political characteristics,,"Not Applicable, No FT",400 entries,400,Aggregated-distributional level Alignment,"Predictive Performance Metrics;
+Statistical Inference","MSE;
+RMSE;
+t-test","Predictive Performance Metrics;
+Statistical Inference","MSE;
+RMSE;
+t-test",No,LLM as Valid Substitutes
+AI-Human Hybrids for Marketing Research: Leveraging Large Language Models (LLMs) as Collaborators,"Arora, N, Chakraborty, I, Nishimura, Y",2025,https://doi.org/10.1177/00222429241276529,Other questionnaires,A: Not addressed,United States,Consumer Preferences; Healthcare & Well-Being,OpenAI GPT Family,Only Closed Source,GPT-4,,Prompt Engineering,,Self-reported data:  Demographic,Age; Sex/Gender; Race/Ethnicity/Nationality; Education; Income/Wealth; Region/Geography; Household/Family; Occupation/Employment,"Not Applicable, No FT",Not reported,,Aggregated-distributional level Alignment,"Agreement & Reliability Metrics;
+Correlation Metrics;
+Statistical Inference","Cronbach's alpha;
+Correlation (not specified);
+Chi-square test","Agreement & Reliability Metrics;
+Correlation Metrics;
+Statistical Inference","Cronbach's alpha;
+Correlation (not specified);
+Chi-square test",No,LLM as Conditional Valid Substitutes
+Algorithmic Fidelity of Large Language Models in Generating Synthetic German Public Opinions: A Case Study,"Bolei Ma, Berk Yoztyurk, Anna Haensch, Xinpeng Wang, Markus Herklotz, Frauke Kreuter, Barbara Plank, Matthias Assenmacher",2025,https://doi.org/10.48550/arXiv.2412.13169,Established Surveys,A: Not addressed,Germany,"Political Attitudes, Values and Behaviors",Llama Family; Mistral Family; Google Family,Both Open and Closed Source,,Llama-2-13b,Prompt Engineering,,Self-reported data:  Demographic; Self-reported data:  Political characteristics,Age; Sex/Gender; Education; Region/Geography,"Not Applicable, No FT",Not reported,,Aggregated-distributional level Alignment,"Agreement & Reliability Metrics;
+Correlation Metrics;
+Distribution Comparison Metrics","Cohen's kappa;
+Proportion agreement;
+Cramér's V;
+KL divergence;
+Jensen-Shannon divergence;
+Entropy","Agreement & Reliability Metrics;
+Correlation Metrics;
+Distribution Comparison Metrics","Cohen's kappa;
+Proportion agreement;
+Cramér's V;
+KL divergence;
+Jensen-Shannon divergence;
+Entropy",Yes,LLM as Conditional Valid Substitutes
+Aligning Language Models to User Opinions,"EunJeong Hwang, Bodhisattwa Prasad Majumder, Niket Tandon",2023,https://doi.org/10.48550/arXiv.2305.14929,Established Surveys,A: Not addressed,United States,"Political Attitudes, Values and Behaviors",OpenAI GPT Family,Only Closed Source,Text-Davinci; Text-Embedding,,Prompt Engineering,,Self-reported data:  Demographic; Self-reported data:  Attitudes and Beliefs,Age; Sex/Gender; Race/Ethnicity/Nationality; Education; Income/Wealth; Region/Geography; Household/Family,"Not Applicable, No FT",Not reported (the paper provides information about the OpinionQA dataset but does not explicitly state the size of the training data used to train the language model),,Both individual and distributional alignment Levels,"Predictive Performance Metrics;
+Distribution Comparison Metrics","Accuracy;
+Wasserstein distance","Predictive Performance Metrics;
+Distribution Comparison Metrics","Accuracy;
+Wasserstein distance",No,LLM as Conditional Valid Substitutes
+ASSESSING OCCUPATIONS THROUGH ARTIFICIAL INTELLIGENCE: A COMPARISON OF HUMANS AND GPT-4,"Christoph Lutz, Paweł Gmyrek, G. Newlands",2024,https://doi.org/10.5210/spir.v2024i0.13993,Prolific custom questionnaires,D: Novel / Unpublished survey instrument,,"Psychological Traits; Social Attitudes, Values and Trust",OpenAI GPT Family,Only Closed Source,GPT-4,,Prompt Engineering,,Self-reported data:  Demographic,Age; Sex/Gender; Race/Ethnicity/Nationality,"Not Applicable, No FT",Not reported,,Aggregated-distributional level Alignment,"Correlation Metrics;
+Descriptive Statistics","Correlation (not specified);
+Descriptive Statistics","Correlation Metrics;
+Descriptive Statistics","Correlation (not specified);
+Descriptive Statistics",No,LLM as Conditional Valid Substitutes
+Balancing Large Language Model Alignment and Algorithmic Fidelity in Social Science Research,"Alex Lyman, Bryce Hepner, Lisa P. Argyle, Ethan C. Busby, Joshua R. Gubler, David Wingate",2025,https://doi.org/10.1177/00491241251342008,Other questionnaires,A: Not addressed,United States,"Political Attitudes, Values and Behaviors; Social Attitudes, Values and Trust",Llama Family; Mistral Family; Google Family,Both Open and Closed Source,,,Prompt Engineering,,Self-reported data:  Demographic; Self-reported data:  Political characteristics,Sex/Gender; Race/Ethnicity/Nationality; Religion/Religiosity,"Not Applicable, No FT",Trillions of tokens of natural language text,,Aggregated-distributional level Alignment,Descriptive Statistics,Descriptive Statistics,Descriptive Statistics,Descriptive Statistics,No,LLM as Conditional Valid Substitutes
+Benchmarking Distributional Alignment of Large Language Models,"Nicole Meister, Carlos Guestrin, Tatsunori Hashimoto",2025,https://doi.org/10.48550/arXiv.2411.05403,Established Surveys,A: Not addressed,United States,"Political Attitudes, Values and Behaviors",OpenAI GPT Family; Claude / Anthropic Family; Llama Family,Both Open and Closed Source,GPT-4; GPT-3.5-Turbo,Llama-3-70b,Prompt Engineering,,Self-reported data:  Demographic; Self-reported data:  Attitudes and Beliefs; Self-reported data:  Political characteristics,Sex/Gender; Race/Ethnicity/Nationality,"Not Applicable, No FT",Not reported,,Aggregated-distributional level Alignment,Distribution Comparison Metrics,Total variation distance,Distribution Comparison Metrics,Total variation distance,No,LLM as Conditional Valid Substitutes
+Beyond Demographics: Aligning Role-playing LLM-based Agents Using Human Belief Networks,"Yun-Shiuan Chuang, Zach Studdiford, Krirk Nirunwiroj, Agam Goyal, Vincent V. Frigo, Sijia Yang, Dhavan Shah, Junjie Hu, Timothy T. Rogers",2024,https://doi.org/10.48550/arXiv.2406.17232,Other questionnaires,A: Not addressed,Not Specified/Global,"Political Attitudes, Values and Behaviors; Social Attitudes, Values and Trust; Economic Preferences",OpenAI GPT Family; Llama Family; Mistral Family,Both Open and Closed Source,GPT-4o-mini; GPT-3.5-Turbo,Llama-3.1-8b; Llama-3.1,Model-level Fine-Tuning,Self-reported data,,,Survey data: Controversial Beliefs Survey by Frigo (2022),"Fine-tuning dataset is formulated as DSFT = {(di, xtrain,i), otrain,i} for i = 1 to N (N = 564 respondents). Labels (opinion responses) are upsampled to ensure equal representation across all six Likert scale values (Certainly False to Certainly True). Fine-tuning performed on ChatGPT (gpt-3.5-turbo-0125) via OpenAI's fine-tuning API. Hyperparameters: Number of Epochs: 3; Batch Size: 1; Learning Rate Multiplier: 2.",1; 564; 3.5; 0125; 3; 1; 2.,Individual-level Alignment,Predictive Performance Metrics,"Recall;
+MAE",Predictive Performance Metrics,"Recall;
+MAE",No,LLM as Conditional Valid Substitutes
+Beyond Demographics: Enhancing Cultural Value Survey Simulation with Multi-Stage Personality-Driven Cognitive Reasoning,"Haijiang Liu, Qiyuan Li, Chao Gao, Yong Cao, Xiangyu Xu, Xun Wu, Daniel Hershcovich, Jinguang Gu",2025,https://doi.org/10.48550/arXiv.2508.17855,Established Surveys,A: Not addressed,United States; China,"Social Attitudes, Values and Trust",OpenAI GPT Family; ChatGLM Family; Doubao Family,Both Open and Closed Source,GPT-4o,,Prompt Engineering,,Self-reported data:  Psychological traits,,"Not Applicable, No FT","- Number of QA pairs for U.S. culture: 102,800
+- Number of QA pairs for Chinese culture: 4,340
+- Number of subjects per cluster: 20","102,800; 4,340; 20",Both individual and distributional alignment Levels,"Predictive Performance Metrics;
+Distribution Comparison Metrics","Accuracy;
+Wasserstein distance;
+Jensen-Shannon divergence","Predictive Performance Metrics;
+Distribution Comparison Metrics","Accuracy;
+Wasserstein distance;
+Jensen-Shannon divergence",No,LLM as Conditional Valid Substitutes
+Beyond WEIRD: Can synthetic survey participants substitute for humans in global policy research?,"Pujen Shrestha, Dario Krpan, Fatima Koaik, Robin Schnider, Dima Sayess, May Saad Binbaz",2024,https://doi.org/10.1177/23794607241311793,Other questionnaires,B: Acknowledged only (no mitigation step),United States; Saudi Arabia; United Arab Emirates,"Social Attitudes, Values and Trust",OpenAI GPT Family,Only Closed Source,GPT-4,,Prompt Engineering,,Self-reported data:  Demographic; Self-reported data:  Attitudes and Beliefs; Self-reported data:  Psychological traits,Age; Sex/Gender; Occupation/Employment,"Not Applicable, No FT",Not reported,,Aggregated-distributional level Alignment,"Correlation Metrics;
+Descriptive Statistics;
+Statistical Inference","Pearson correlation;
+Descriptive Statistics;
+ANOVA;
+Eta squared","Correlation Metrics;
+Descriptive Statistics;
+Statistical Inference","Pearson correlation;
+Descriptive Statistics;
+ANOVA;
+Eta squared",No,LLM as Conditional Valid Substitutes
+Can ChatGPT emulate humans in software engineering surveys?,"Steinmacher, Igor; Penney, Jacob Mcauley; Felizardo, Katia Romero; Garcia, Alessandro F.; Gerosa, Marco A.",2024,https://doi.org/10.1145/3674805.3690744,Established Surveys,B: Acknowledged only (no mitigation step),,Technology Usage & Capabilities,OpenAI GPT Family,Only Closed Source,GPT-4,,Prompt Engineering,,,Occupation/Employment,"Not Applicable, No FT",Not reported,,Aggregated-distributional level Alignment,Statistical Inference,"Mann-Whitney U;
+Kruskal-Wallis",Statistical Inference,"Mann-Whitney U;
+Kruskal-Wallis",No,LLM as Conditional Valid Substitutes
+Can ChatGPT Outperform Humans in Faking a Personality Assessment While Avoiding Detection?,"C. Robie, Jane Phillips, J. Bourdage, Neil D. Christiansen, Patrick D. Dunlop, Stephen D. Risavy, Andrew B. Speer",2025,https://doi.org/10.1111/ijsa.70015,Other questionnaires,A: Not addressed,United States; United Kingdom; Australia; Canada,Psychological Traits,OpenAI GPT Family,Only Closed Source,,,Prompt Engineering,,,Education; Occupation/Employment,"Not Applicable, No FT",Not reported,,Aggregated-distributional level Alignment,Statistical Inference,ANOVA,Statistical Inference,ANOVA,No,LLM as Invalid Substitutes
+Can large language models estimate public opinion about global warming? An empirical assessment of algorithmic fidelity and bias,"Lee, SG, Peng, TQ, Goldberg, MH, Rosenthal, SA, Kotcher, JE, Maibach, EW, Leiserowitz, A",2024,https://doi.org/10.1371/journal.pclm.0000429,Other questionnaires,A: Not addressed,,"Social Attitudes, Values and Trust",OpenAI GPT Family,Only Closed Source,GPT-4; GPT-3.5,,Prompt Engineering,,Self-reported data:  Demographic; Self-reported data:  Attitudes and Beliefs; Self-reported data:  Political characteristics,Age; Sex/Gender; Race/Ethnicity/Nationality; Education; Region/Geography,"Not Applicable, No FT",Not reported,,Both individual and distributional alignment Levels,"Predictive Performance Metrics;
+Correlation Metrics;
+Distribution Comparison Metrics","Accuracy;
+F1 score;
+Cramér's V;
+KL divergence","Predictive Performance Metrics;
+Correlation Metrics;
+Distribution Comparison Metrics","Accuracy;
+F1 score;
+Cramér's V;
+KL divergence",Yes,LLM as Conditional Valid Substitutes
+ChatGPT as a voting application in direct democracy,"Maud Reveilhac, Davide Morselli",2025,https://doi.org/10.1111/spsr.12650,Established Surveys,A: Not addressed,Switzerland,"Political Attitudes, Values and Behaviors",OpenAI GPT Family,Only Closed Source,GPT-3.5,,Prompt Engineering,,Self-reported data:  Political characteristics,,"Not Applicable, No FT",Not reported,,Aggregated-distributional level Alignment,Descriptive Statistics,Descriptive Statistics,Descriptive Statistics,Descriptive Statistics,No,LLM as Conditional Valid Substitutes
+Conceptual structure coheres in human cognition but not in large language models,"Siddharth Suresh, Kushin Mukherjee, Xizheng Yu, Wei-Chun Huang, Lisa Padua, T. Rogers",2023,https://doi.org/10.18653/v1/2023.emnlp-main.47,Other questionnaires,A: Not addressed,United States; Belgium,Psychological Traits,OpenAI GPT Family; Google Family,Only Closed Source,GPT-3,,Prompt Engineering,,,,"Not Applicable, No FT",Not reported,,Aggregated-distributional level Alignment,"Predictive Performance Metrics;
+Correlation Metrics","Accuracy;
+Procrustes correlation","Predictive Performance Metrics;
+Correlation Metrics","Accuracy;
+Procrustes correlation",No,LLM as Invalid Substitutes
+Demonstrations of the Potential of AI-based Political Issue Polling,"Nathan Sanders, Alex Ulinich, B. Schneier",2023,https://doi.org/10.48550/arXiv.2307.04781,Established Surveys,C: Temporal exclusion (postdates training cutoff),United States,"Political Attitudes, Values and Behaviors; Social Attitudes, Values and Trust",OpenAI GPT Family,Only Closed Source,GPT-3.5-Turbo,,Prompt Engineering,,Self-reported data:  Demographic,Age; Sex/Gender; Race/Ethnicity/Nationality,"Not Applicable, No FT",Not reported,,Aggregated-distributional level Alignment,"Predictive Performance Metrics;
+Correlation Metrics;
+Distribution Comparison Metrics","MAPE;
+Correlation (not specified);
+Wasserstein distance","Predictive Performance Metrics;
+Correlation Metrics;
+Distribution Comparison Metrics","MAPE;
+Correlation (not specified);
+Wasserstein distance",No,LLM as Conditional Valid Substitutes
+Evaluating Silicon Sampling: LLM Accuracy in Simulating Public Opinion on Facial Recognition Technology,Charles Ma,2025,https://doi.org/10.54941/ahfe1006738,Other questionnaires,A: Not addressed,United States; Germany; China; United Kingdom,"Social Attitudes, Values and Trust",OpenAI GPT Family; Claude / Anthropic Family; DeepSeek Family,Both Open and Closed Source,GPT-4o,,Prompt Engineering,,Self-reported data:  Demographic; Self-reported data:  Attitudes and Beliefs,Age; Sex/Gender; Race/Ethnicity/Nationality; Education; Income/Wealth; Region/Geography,"Not Applicable, No FT",Not reported,,Aggregated-distributional level Alignment,"Predictive Performance Metrics;
+Agreement & Reliability Metrics","MAE;
+Cohen's kappa;
+Quadratic weighted kappa","Predictive Performance Metrics;
+Agreement & Reliability Metrics","MAE;
+Cohen's kappa;
+Quadratic weighted kappa",No,LLM as Conditional Valid Substitutes
+Evaluating the Efficacy of LLMs to Emulate Realistic Human Personalities,"Lawrence J. Klinkert, Stephanie Buongiorno, Corey Clark",2024,https://doi.org/10.1609/aiide.v20i1.31867,Other questionnaires,A: Not addressed,,Psychological Traits,OpenAI GPT Family; Mistral Family; Google Family,Both Open and Closed Source,GPT-4; GPT-3.5-Turbo; Text-Davinci,,Prompt Engineering,,Self-reported data:  Psychological traits,,"Not Applicable, No FT",Not reported (the paper does not explicitly state the size of the training dataset used to train the language models),,Individual-level Alignment,Predictive Performance Metrics,"Accuracy;
+MSE",Predictive Performance Metrics,"Accuracy;
+MSE",No,LLM as Conditional Valid Substitutes
+Examining the Feasibility of Large Language Models as Survey Respondents,"Ayato Kitadai, Kazuhito Ogawa, Nariaki Nishino",2024,https://doi.org/10.1109/BigData62323.2024.10825497,Other questionnaires,A: Not addressed,Japan,Consumer Preferences,OpenAI GPT Family,Only Closed Source,GPT-4o-mini,,Prompt Engineering,,Self-reported data:  Demographic; Self-reported data:  Attitudes and Beliefs,Age; Sex/Gender; Region/Geography,"Not Applicable, No FT","- Number of respondents: 234 (elementary and middle school), 886 (high school and university)
+- Number of survey responses: 234 (elementary and middle school), 886 (high school and university)",234; 886; 234; 886,Aggregated-distributional level Alignment,Descriptive Statistics,Descriptive Statistics,Descriptive Statistics,Descriptive Statistics,No,LLM as Invalid Substitutes
+Exploring Changes in Nation Perception with Nationality-Assigned Personas in LLMs,"M. Kamruzzaman, Gene Louis Kim",2025,https://doi.org/10.48550/arXiv.2406.13993,Established Surveys,A: Not addressed,United States,"Social Attitudes, Values and Trust",OpenAI GPT Family; Llama Family; Mistral Family; Google Family; Qwen Family,Both Open and Closed Source,GPT-4o,Llama-3.1-70b,Prompt Engineering,,,Race/Ethnicity/Nationality,"Not Applicable, No FT",Not reported,,Aggregated-distributional level Alignment,"Correlation Metrics;
+Descriptive Statistics","Spearman correlation;
+Descriptive Statistics","Correlation Metrics;
+Descriptive Statistics","Spearman correlation;
+Descriptive Statistics",No,LLM as Invalid Substitutes
+Extracting Affect Aggregates from Longitudinal Social Media Data with Temporal Adapters for Large Language Models,"Georg Ahnert, Max Pellert, David Garcia, Markus Strohmaier",2025,https://doi.org/10.1609/icwsm.v19i1.35801,Other questionnaires,C: Temporal exclusion (postdates training cutoff),United Kingdom,"Political Attitudes, Values and Behaviors; Healthcare & Well-Being",Llama Family,Only Open Source,,Llama-3-8b,Model-level Fine-Tuning,"External: 
+Social Media Data",Self-reported data:  Demographic,Sex/Gender,"External data: Longitudinal Social Media Twitter Panel Data from a panel of 21,576 British Twitter users with their full timelines from November 2019 to June 2020.","Summary
+- Number of respondents: 21,576
+- Number of documents or records: 385,000 tweets per week
+- Number of tokens: Sequences of 512 tokens
+
+Twitter panel data from a panel of 21,576 British Twitter users (13,600,000 tweets total); full timelines from November 2019 to June 2020 (35 weeks). On average 385,000 tweets per week available. The panel data is split into weekly subsets (7-day subsets), concatenated into sequences of 512 tokens for batch training. One LoRA adapter (rank 128) is trained per week (35 adapters total), with 3 different training seeds per week. Training conducted on two NVIDIA H100 GPUs; adamw_torch_fused optimizer; batch size 6; 4 gradient accumulation steps; learning rate 5∗10⁻⁶; at most 1 training epoch (350 steps per adapter); approximately 20 minutes per adapter.","21,576; 385,000; 512; 21,576; 13,600,000; 2019; 2020; 35; 385,000; 7; 512; 128; 35; 3; 100; 6; 4; 5; 10; 1; 350; 20",Aggregated-distributional level Alignment,"Correlation Metrics;
+Statistical Inference","Pearson correlation;
+Permutation test","Correlation Metrics;
+Statistical Inference","Pearson correlation;
+Permutation test",No,LLM as Valid Substitutes
+From Values to Opinions: Predicting Human Behaviors and Stances Using Value-Injected Large Language Models,"Kane, Dongjun; Parke, JoonSuk; Jo, Yohan; Bak, JinYeong",2023,https://doi.org/10.18653/v1/2023.emnlp-main.961,Established Surveys,A: Not addressed,,"Political Attitudes, Values and Behaviors; Social Attitudes, Values and Trust",OpenAI GPT Family; Llama Family,Both Open and Closed Source,,,Model-level Fine-Tuning,Self-reported data,Self-reported data:  Psychological traits,,Survey data: Touché23-ValueEval-Dataset,Touché23-ValueEval dataset; split 80:10:10 (training:validation:test). Fine-tuned LLAMA-7B (7 billion parameters) using PyTorch on an NVIDIA RTX A6000 GPU (48GB memory). AdamW optimizer; 5 epochs; batch size 4; learning rate 2e-5. LoRA rank 8; γ of Argument Generation set to 3,23; 80; 10; 10; 7; 7; 6000; 48; 5; 4; 2; 5.; 8; 3,Aggregated-distributional level Alignment,"Predictive Performance Metrics;
+Agreement & Reliability Metrics;
+Statistical Inference","MSE;
+NMSE;
+Proportion agreement;
+t-test","Predictive Performance Metrics;
+Agreement & Reliability Metrics;
+Statistical Inference","MSE;
+NMSE;
+Proportion agreement;
+t-test",No,LLM as Conditional Valid Substitutes
+Generative AI Meets Open-Ended Survey Responses: Research Participant Use of AI and Homogenization,"Zhang, S, Xu, J, Alvero, AJ",2025,https://doi.org/10.1177/00491241251327130,Prolific custom questionnaires,A: Not addressed,United States,"Social Attitudes, Values and Trust",OpenAI GPT Family; Claude / Anthropic Family; Google Family,Only Closed Source,GPT-4o-mini; GPT-4o,,Prompt Engineering,,Self-reported data:  Demographic; Self-reported data:  Political characteristics,Age; Race/Ethnicity/Nationality; Education,"Not Applicable, No FT",Not reported,,Both individual and distributional alignment Levels,"Descriptive Statistics;
+Text Representation & Semantic Similarity","Descriptive Statistics;
+Text Representation & Semantic Similarity","Descriptive Statistics;
+Text Representation & Semantic Similarity","Descriptive Statistics;
+Text Representation & Semantic Similarity",No,LLM as Invalid Substitutes
+How Well Do Simulated Population Samples with GPT-4 Align with Real Ones? The Case of the Eysenck Personality Questionnaire Revised-Abbreviated Personality Test,"Ferreira, G, Amidei, J, Nieto, R, Kaltenbrunner, A",2025,https://doi.org/10.34133/hds.0284,Other questionnaires,A: Not addressed,Spain,Psychological Traits,OpenAI GPT Family,Only Closed Source,GPT-4; GPT-4o; GPT-4-Turbo; GPT-3.5-Turbo; GPT-3.5,,Prompt Engineering,,Self-reported data:  Demographic; Self-reported data:  Attitudes and Beliefs,Age; Sex/Gender; Education; Occupation/Employment,"Not Applicable, No FT","The desired responses (i.e., finetuning labels) were generated through a simple partisanship split (same-side objects are positively correlated and vice versa)",,Aggregated-distributional level Alignment,"Agreement & Reliability Metrics;
+Descriptive Statistics","Cronbach's alpha;
+Descriptive Statistics","Agreement & Reliability Metrics;
+Descriptive Statistics","Cronbach's alpha;
+Descriptive Statistics",No,LLM as Invalid Substitutes
+Ideology and Policy Preferences in Synthetic Data: The Potential of LLMs for Public Opinion Analysis,"Keyeun Lee, Jaehyuk Park, Suh-hee Choi, Changkeun Lee",2025,https://doi.org/10.17645/mac.9677,Other questionnaires,C: Temporal exclusion (postdates training cutoff),Korea,"Political Attitudes, Values and Behaviors; Economic Preferences",OpenAI GPT Family,Only Closed Source,,,Prompt Engineering,,Self-reported data:  Demographic,Age; Sex/Gender; Education,"Not Applicable, No FT",Not reported,,Aggregated-distributional level Alignment,Statistical Inference,KS test,Statistical Inference,KS test,Yes,LLM as Conditional Valid Substitutes
+Investigating Cultural Alignment of Large Language Models,"Badr AlKhamissi, Muhammad N. ElNokrashy, Mai AlKhamissi, Mona Diab",2024,https://doi.org/10.48550/arXiv.2402.13231,Established Surveys,A: Not addressed,United States; Egypt,"Political Attitudes, Values and Behaviors; Social Attitudes, Values and Trust",OpenAI GPT Family; Llama Family; MT0 / mT0 Family; AceGPT Family,Both Open and Closed Source,GPT-3.5,Llama-2-13b,Prompt Engineering,,Self-reported data:  Demographic,Age; Sex/Gender; Education; Income/Wealth; Region/Geography; Household/Family,"- Dataset description: Finetuned on a corpus of Arabic and English data
+- Dataset name: Not specified",Not reported,,Individual-level Alignment,Predictive Performance Metrics,Accuracy,Predictive Performance Metrics,Accuracy,No,LLM as Conditional Valid Substitutes
+Jump Starting Bandits with LLM-Generated Prior Knowledge,"P. A. Alamdari, Yanshuai Cao, Kevin H. Wilson",2024,https://doi.org/10.48550/arXiv.2406.19317,Other questionnaires,A: Not addressed,United States,Healthcare & Well-Being,OpenAI GPT Family; Claude / Anthropic Family; Mistral Family,Both Open and Closed Source,GPT-4o; GPT-3.5,,Prompt Engineering,,Self-reported data:  Demographic; Self-reported data:  Attitudes and Beliefs,Age; Sex/Gender; Income/Wealth; Region/Geography; Occupation/Employment,"Not Applicable, No FT","10,000 synthetic users","10,000",Aggregated-distributional level Alignment,Predictive Performance Metrics,Regret,Predictive Performance Metrics,Regret,No,LLM as Conditional Valid Substitutes
+Knowledge of cultural moral norms in large language models,"Aida Ramezani, Yang Xu",2023,https://doi.org/10.48550/arXiv.2306.01857,Established Surveys,B: Acknowledged only (no mitigation step),,"Psychological Traits; Social Attitudes, Values and Trust",OpenAI GPT Family,Only Closed Source,GPT-3; GPT-2,,Model-level Fine-Tuning,Self-reported data,,,Survey data: World Values Survey Wave 7 and the PEW Global Attitudes survey,"Three different Fine-tuning methods and therefore datasets were tested: 
+
+(1) Random: 80% of fine-tuning data used for training, with unseen topic-country pairs as the evaluation set; 
+(2) Country-based: 20% of countries withheld (n = 11 for WVS, n = 8 for PEW); 
+(3) Topic-based: 20% of topics withheld (n = 4 for WVS, n = 2 for PEW). The resulting training and evaluation sample counts: WVS -> training samples range from 81,200-82,600 with 202-216 evaluation pairs depending on strategy; PEW -> training samples range from 23,400-24,900 with 63-78 evaluation pairs.","1; 80; 2; 20; 11; 8; 3; 20; 4; 2; 81,200; 82,600; 202; 216; 23,400; 24,900; 63; 78",Aggregated-distributional level Alignment,"Correlation Metrics;
+Statistical Inference","Pearson correlation;
+Mann-Whitney U","Correlation Metrics;
+Statistical Inference","Pearson correlation;
+Mann-Whitney U",No,LLM as Conditional Valid Substitutes
+Language Model Fine-Tuning on Scaled Survey Data for Predicting Distributions of Public Opinions,"Joseph Suh, Erfan Jahanparast, Suhong Moon, Minwoo Kang, Serina Chang",2025,https://doi.org/10.48550/arXiv.2502.16761,Established Surveys,A: Not addressed,United States,"Political Attitudes, Values and Behaviors",Llama Family; Mistral Family,Only Open Source,,Llama-3-70b; Llama-2-13b; Llama-2-7b,Model-level Fine-Tuning,Self-reported data,Self-reported data:  Demographic; Self-reported data:  Political characteristics,Age; Sex/Gender; Race/Ethnicity/Nationality; Education; Income/Wealth; Region/Geography,Survey data: SubPOP - a scaled dataset of subpopulation-response pairs from well-established public opinion surveys,"Number of questions: 3,362,
+Number of subpopulation-response pairs: 70K,
+Number of multiple-choice questions in SubPOP for training: 3,229
+
+.SubPOP-Train is a curated dataset drawn from Pew Research Center's American Trends Panel (ATP), comprising 3,229 multiple-choice questions collected across 53 survey waves (waves 61–132), excluding those already used in OpinionQA. Altogether it contains around 70,000 subpopulation-response distribution pairs. The dataset covers 22 subpopulations defined by demographic, socioeconomic, and ideological traits, and spans over 20 topic areas. Each entry in the dataset is a three-part tuple consisting of a survey question, a target subpopulation description, and the observed human opinion distribution for that group. Questions with more than 10 response options, redacted response data, or dependencies on prior questions were excluded, and GPT-4o was used to make minimal wording refinements to suit language model prompting. An equal number of training samples was allocated to each subpopulation group, and all response distributions were computed using Pew's post-survey calibration weights to account for non-response and sampling biases and ensure population representativeness.","3,362,; 70; 3,229; 3,229; 53; 61; 132; 70,000; 22; 20; 10; 4",Aggregated-distributional level Alignment,Distribution Comparison Metrics,"Wasserstein distance;
+KL divergence",Distribution Comparison Metrics,"Wasserstein distance;
+KL divergence",No,LLM as Conditional Valid Substitutes
+LLM-Based Doppelganger Models: Leveraging Synthetic Data for Human-Like Responses in Survey Simulations,"Cho, Suhyun; Kim, Jaeyun; Kim, Jang Hyun",2024,https://doi.org/10.1109/ACCESS.2024.3502219,Other questionnaires,D: Novel / Unpublished survey instrument,Korea,"Social Attitudes, Values and Trust",OpenAI GPT Family; Llama Family; Google Family,Both Open and Closed Source,GPT-3.5-Turbo,Llama-3-8b,Model-level Fine-Tuning,"Self-reported data; External: 
+Conversation Data",Self-reported data:  Demographic; Self-reported data:  Attitudes and Beliefs,Age; Sex/Gender; Region/Geography; Occupation/Employment,Survey Data and Counseling Conversation Data,"Summary:
+- Number of respondents: 5,200 students,
+- Number of survey responses: Each student completed six surveys,
+- Number of documents or records: 10,400 counseling sessions,
+- Number of tokens: Limited to text lengths of 1,000, 3,000, and 5,000,
+
+Korean dataset ""Building Counseling Data for Career Exploration Based on Artificial Intelligence"". 5,200 students in total: 1,118 elementary school students, 2,554 middle school students, and 1,458 high school students. Each student participated in two counseling sessions, resulting in a total of 10,400 counseling sessions. Each student completed six different surveys (responses on a scale of 1-5). Average total utterances per conversation: ~63.23; average student utterances per conversation: ~21.13.
+
+Two-stage training on LLaMA 3 8B (Korean, 4-bit quantized via DoRA; single 40GB GPU). Common PEFT parameters: r = 8; LoRA alpha = 32; dropout = 0.05; batch size = 2.
+
+Surveyed LLM: Trained on the full dataset excluding the 75 students reserved for Stage 2. Training includes both conversational data and survey response data. Input data limited to text lengths of 1,000, 3,000, and 5,000 tokens; if input exceeds the specified length, oldest utterances are removed first. Five out of six survey questions included in training; the last survey question excluded from training and reserved for evaluation. Each token-length variant trained for 1 epoch.
+
+Doppelgänger LLM: 75 students (selected for having the largest amount of utterance data), not included in Stage 1 training. Conversational data used in Stage 1 excluded to prevent data leakage. Five out of six surveys used for training; one survey reserved for evaluation (same survey excluded in Stage 1). Trained for 5, 10, 15, and 20 epochs (accuracy compared across these). Evaluation data: the same 75 students; survey responses mapped to a 3-point scale (1–2 = negative, 3 = neutral, 4–5 = positive).","5,200; 10,400; 1,000,; 3,000,; 5,000,; 5,200; 1,118; 2,554; 1,458; 10,400; 1; 5; 63.23; 21.13; 3; 8; 4; 40; 8; 32; 0.05; 2.; 75; 2.; 1,000,; 3,000,; 5,000; 1; 75; 1; 1; 1; 5,; 10,; 15,; 20; 75; 3; 1; 2; 3; 4; 5",Individual-level Alignment,Predictive Performance Metrics,Accuracy,Predictive Performance Metrics,Accuracy,No,LLM as Valid Substitutes
+"Llms, Virtual Users, and Bias: Predicting Any Survey Question Without Human Data","Enzo Sinacola, Arnault Pachot, Thierry Petit",2025,https://doi.org/10.48550/arXiv.2503.16498,Established Surveys,A: Not addressed,Not Specified/Global,"Political Attitudes, Values and Behaviors",OpenAI GPT Family; Claude / Anthropic Family; Llama Family; Mistral Family,Both Open and Closed Source,GPT-4o; GPT-3.5,Llama-3.1-8b; Llama-3-8b,Prompt Engineering,,Self-reported data:  Demographic,Age; Sex/Gender; Race/Ethnicity/Nationality; Education; Income/Wealth; Household/Family; Religion/Religiosity,"Not Applicable, No FT",Not reported,,Individual-level Alignment,Predictive Performance Metrics,Accuracy,Predictive Performance Metrics,Accuracy,No,LLM as Conditional Valid Substitutes
+Machine Bias. How Do Generative Language Models Answer Opinion Polls?,"Boelaert, J, Coavoux, S, Ollion, E, Petev, I, Präg, P",2025,https://doi.org/10.1177/00491241251330582,Established Surveys,D: Novel / Unpublished survey instrument,United States; Germany; Russia; Australia; Mexico,"Political Attitudes, Values and Behaviors; Social Attitudes, Values and Trust; Healthcare & Well-Being",OpenAI GPT Family; Llama Family; Mistral Family,Both Open and Closed Source,GPT-4-Turbo; GPT-3.5-Turbo; GPT-3; Text-Davinci,Llama-3-70b; Llama-3-8b,Prompt Engineering,,Self-reported data:  Demographic,Age; Sex/Gender; Education; Household/Family; Occupation/Employment,"Not Applicable, No FT",Not reported,,Aggregated-distributional level Alignment,"Distribution Comparison Metrics;
+Statistical Inference","Wasserstein distance;
+ANOVA;
+F-test","Distribution Comparison Metrics;
+Statistical Inference","Wasserstein distance;
+ANOVA;
+F-test",Yes,LLM as Invalid Substitutes
+"Out of One, Many: Using Language Models to Simulate Human Samples","Argyle, Lisa P. P.; Busby, Ethan C. C.; Fulda, Nancy; Gubler, Joshua R. R.; Rytting, Christopher; Wingate, David",2023,https://doi.org/10.1017/pan.2023.2,Established Surveys,A: Not addressed,United States,"Political Attitudes, Values and Behaviors",OpenAI GPT Family,Only Closed Source,GPT-3,,Prompt Engineering,,Self-reported data:  Demographic; Self-reported data:  Political characteristics,Age; Sex/Gender; Race/Ethnicity/Nationality; Education; Religion/Religiosity,"- Dataset description: Sociodemographic backstories from real human participants in multiple large surveys conducted in the United States.
+- Dataset name: American National Election Studies (ANES), Rothschild et al.'s ""Pigeonholing Partisans"" data","- Number of respondents: 4270
+- Number of unique conditioning texts: more than 50,000","4270; 50,000",Aggregated-distributional level Alignment,"Agreement & Reliability Metrics;
+Correlation Metrics;
+Statistical Models & Regression","Cohen's kappa;
+Proportion agreement;
+Intraclass correlation coefficient;
+Tetrachoric correlation;
+OLS","Agreement & Reliability Metrics;
+Correlation Metrics;
+Statistical Models & Regression","Cohen's kappa;
+Proportion agreement;
+Intraclass correlation coefficient;
+Tetrachoric correlation;
+OLS",Yes,LLM as Valid Substitutes
+Performance and biases of Large Language Models in public opinion simulation,"Qu, Y, Wang, J",2024,https://doi.org/10.1057/s41599-024-03609-x,Established Surveys,A: Not addressed,United States; Japan; South Africa; Singapore; Brazil; Sweden,"Political Attitudes, Values and Behaviors; Social Attitudes, Values and Trust; Economic Preferences",OpenAI GPT Family,Only Closed Source,GPT-3.5-Turbo,,Prompt Engineering,,Self-reported data:  Demographic; Self-reported data:  Attitudes and Beliefs,Age; Sex/Gender; Race/Ethnicity/Nationality; Education; Income/Wealth,"Not Applicable, No FT",Not reported,,Aggregated-distributional level Alignment,"Agreement & Reliability Metrics;
+Correlation Metrics","Cohen's kappa;
+Proportion agreement;
+Cramér's V","Agreement & Reliability Metrics;
+Correlation Metrics","Cohen's kappa;
+Proportion agreement;
+Cramér's V",No,LLM as Conditional Valid Substitutes
+PersonalLLM: Tailoring LLMs to Individual Preferences,"Thomas Zollo, Andrew Siah, Naimeng Ye, Ang Li, Hongseok Namkoong",2024,https://doi.org/10.48550/arXiv.2409.20296,Established Surveys,A: Not addressed,United States,"Political Attitudes, Values and Behaviors; Social Attitudes, Values and Trust",OpenAI GPT Family; Claude / Anthropic Family; Llama Family; Mistral Family; Google Family; Cohere Command Family,Both Open and Closed Source,GPT-4o; GPT-4-Turbo,Llama-3-70b; Llama-3-8b,Prompt Engineering,,,,"Not Applicable, No FT","9,402 training examples","9,402",Aggregated-distributional level Alignment,Distribution Comparison Metrics,Wasserstein distance,Distribution Comparison Metrics,Wasserstein distance,No,LLM as Conditional Valid Substitutes
+Predicting Language Models' Success at Zero-Shot Probabilistic Prediction,"Kevin Ren, Santiago Cortes-Gomez, C. Patiño, Ananya Joshi, Ruiqi Lyu, Jingjing Tang, Alistair Turcan, Khurram Yamin, Steven Wu, Bryan Wilder",2025,https://doi.org/10.48550/arXiv.2509.15356,Other questionnaires,B: Acknowledged only (no mitigation step),Not Specified/Global,"Social Attitudes, Values and Trust; Economic Preferences; Healthcare & Well-Being",OpenAI GPT Family; Llama Family; Mistral Family,Both Open and Closed Source,GPT-4o-mini; GPT-4o,Llama-3.1-8b,Prompt Engineering,,Self-reported data:  Demographic; Self-reported data:  Attitudes and Beliefs; Self-reported data:  Political characteristics; Self-reported data:  Psychological traits,Age; Sex/Gender; Race/Ethnicity/Nationality; Education; Income/Wealth; Region/Geography; Household/Family; Occupation/Employment,"Not Applicable, No FT",Not reported,,Individual-level Alignment,"Predictive Performance Metrics;
+Correlation Metrics","Accuracy;
+AUC;
+Correlation (not specified)","Predictive Performance Metrics;
+Correlation Metrics","Accuracy;
+AUC;
+Correlation (not specified)",No,LLM as Conditional Valid Substitutes
+Predicting Missing Values in Survey Data Using Prompt Engineering for Addressing Item Non-Response,"Ji, Junyung; Kim, Jiwoo; Kim, Younghoon",2024,https://doi.org/10.3390/fi16100351,Established Surveys,A: Not addressed,United States,"Political Attitudes, Values and Behaviors; Economic Preferences",OpenAI GPT Family; Llama Family,Both Open and Closed Source,GPT-4o-mini; GPT-4-Turbo,Llama-3-8b,Prompt Engineering,,Self-reported data:  Attitudes and Beliefs,,"Not Applicable, No FT",Not reported,,Individual-level Alignment,Predictive Performance Metrics,F1 score,Predictive Performance Metrics,F1 score,No,LLM as Valid Substitutes
+Reliability of Distribution Predictions by LLMs: Insights from Counterintuitive Pseudo-Distributions,"Toma Suzuki, Ayuki Katayama, Seiji Gobara, Ryo Tsujimoto, Hibiki Nakatani, Kazuki Hayashi, Yusuke Sakai, Hidetaka Kamigaito, Taro Watanabe, A. Chowdhery, Sharan Narang, Jacob Devlin, Maarten Bosma, Gaurav Mishra, Adam Roberts, Hyung Paul Barham, Won Chung, Charles Sutton, Sebastian Gehrmann, Parker Schuh, Kensen Shi, Sasha Tsvyashchenko, Joshua Maynez, Abhishek Rao, Parker Barnes, Yi Tay, Noam M. Shazeer, Vinodkumar Prabhakaran, Emily Reif, Nan Du, Ben Hutchinson, Reiner Pope, James Bradbury, Jacob Austin, M. Isard, Guy Gur-Ari, Pengcheng Yin, Toju Duke, Anselm Levskaya, S. Ghemawat, Sunipa Dev, H. Michalewski, Xavier Garcia, Vedant Misra, Kevin Robinson, L. Fedus, Denny Zhou, Daphne Ippolito, D. Luan, Hyeontaek Lim, Bar-ret Zoph, A. Spiridonov, Ryan Sepassi, David Dohan, Shivani Agrawal, Mark Omernick, Andrew M. Dai, Thanumalayan Sankaranarayana, Marie Pellat, Aitor Lewkowycz, Erica Moreira, R. Child, Oleksandr Polozov, Kather-ine Lee, Zongwei Zhou, Xuezhi Wang, Brennan Saeta, Mark Díaz, Orhan Firat, M. Catasta, Jason Wei, K. Meier-Hellstern, Abhimanyu Dubey, Abhinav Jauhri, Abhinav Pandey, Abhishek Kadian, Ahmad Al-Dahle, Aiesha Letman, Akhil Mathur, Alan Schelten, Amy Yang, Angela Fan, Anirudh Goyal, A. Hartshorn, Aobo Yang, Archi Mitra, A. Sravankumar, A. Korenev, Arthur Hinsvark, Arun Rao, Aston Zhang, Aurelien Rodriguez, Austen Gregerson, Ava Spataru, Baptiste Rozière, Bethany Biron, Binh Tang, Bobbie Chern, C. Caucheteux, Chaya Nayak, Chloe Bi, Chris Marra, Chris McConnell, Christian Keller, C. Touret, Chunyang Wu, Corinne Wong, Cris-tian Cantón Ferrer, Cyrus Nikolaidis, Damien Al-lonsius, Daniel Song, Danielle Pintz, Danny Livshits, David Esiobu, Dhruv Choudhary, Dhruv Mahajan, Diego Garcia-Olano, Diego Perino, Dieuwke Hupkes, Egor Lakomkin, Ehab A. AlBadawy, Elina Lobanova, Emily Dinan, Eric Michael Smith, Filip Radenovic, Frank Zhang, Gabriele Synnaeve, Gabrielle Lee, Georgia Lewis Anderson, Graeme Nail, Gregoire Mi-alon, Guan Pang, Guillem Cucurell, Hailey Nguyen, Han-nah Korevaar, Hu Xu, Hugo Touvron, Imanol Iliyan Zarov, Arrieta Ibarra, Is-han Kloumann, Ishan Misra, Ivan Evtimov, Jade Copet, Jaewon Lee, Jan Geffert, Jana Vranes, Jason Park, Jay Mahadeokar, Jeet Shah, J. V. D. Linde, Jennifer Billock, Jenny Hong, Jenya Lee, J. Fu, Jianfeng Chi, Jianyu Huang, Jiawen Liu, Jie Wang, Jiecao Yu, Joanna Bitton, Joe Spisak, Jongsoo Park, Joseph Rocca, J. Johnstun, Joshua Saxe, Junteng Jia, Kalyan Vasuden Alwala, K. Upasani, Kate Plawiak, Keqian Li, Kenneth Heafield, Kevin R. Stone, Khalid El-Arini, Krithika Iyer, Kshitiz Malik, Kuen-ley Chiu, Kunal Bhalla, Lauren Rantala-Yeary, Laurens van der Maaten, Lawrence Chen, Liang Tan, Liz Jenkins, Louis Martin, Lovish Madaan, Lubo Malo, Lukas Blecher, Lukas Landzaat, Luke de Oliveira, Madeline Muzzi, Ma-hesh Pasupuleti, Mannat Singh, Manohar Paluri, Marcin Kardas, Mathew Oldham, Mathieu Rita, Maya Pavlova, M. Kambadur, Mike Lewis, Mitesh Min Si, Kumar Singh, Mona Hassan, Naman Goyal, Narjes Torabi, Nikolay Bash-lykov, Nikolay Bogoychev, Niladri S. Chatterji, Olivier Duchenne, Onur Çelebi, Patrick Alrassy, Pengchuan Zhang, Pengwei Li, Petar Vasić, Peter Weng, Prajjwal Bhargava, P. Dubal, Praveen Krishnan Punit, S. Koura, Puxin Xu, Qing He, Qingxiao, Ragavan Dong, Raj Srinivasan, Ramon Ganapathy, Ricardo Silveira Calderer, Robert Cabral, Stojnic Roberta, R. Raileanu, Rohit Girdhar, Rohit Patel, R. Sauvestre, Roshan Polidoro, Sumbaly Ross, Ruan Taylor, Rui Silva, Rui Hou, Saghar Wang, Sahana Hosseini, S. Chennabasappa, Singh Sean, Seohyun Sonia Bell, Sergey Kim, Edunov Shaoliang, Sharan Nie, Sharath Narang, Raparthy Sheng, Sheng Shen, S.Y. Wan, Shun Bhosale, Simon Zhang, Soumya Vandenhende, Spencer Batra, Sten Whitman, Stephane Sootla, Suchin Collot, Sydney Gu-rurangan, Tamar Borodinsky, Tara Herman, Tarek Fowler, Thomas Sheasha, Thomas Georgiou, Tobias Scialom, Todor Speckbacher, Tong Mihaylov, Ujjwal Xiao, Vedanuj Karn, Vibhor Goswami, Vignesh Gupta, Viktor Ramanathan, Vincent Kerkez, Virginie Gonguet, Vish Do, Vladan Vogeti, Weiwei Petro-vic, Wenhan Chu, Wenyin Xiong, Whit-ney Fu, Xavier Meers, Xiaodong Martinet, Xiao-qing Wang, Ellen Tan, Xinfeng Xie, Xuchao Jia, Xuewei Wang, Yaelle Goldschlag, Yashesh Gaur, Yasmine Babaei, Yiwen Wen, Yiwen Song, Yuchen Zhang, Yue Li, Yuning Mao, Zacharie Delpierre Coudert, Zhengxu Yan, Zhengxing Chen, Zoe Papakipos, Aaditya K. Singh, Aaron Grattafiori, Abha Jain, Adam Kelsey, Adam Shajnfeld, Adi Gangidi, Adolfo Victoria, Ahuva Goldstand, A. Menon, Ajay Sharma, Alex Boesen-berg, Alex Vaughan, Alexei Baevski, Allie Feinstein, Amanda Kallet, Amit Sangani, Anam Yunus, An-drei Lupu, Andres Alvarado, Andrew Caples, Andrew Gu, Andrew Ho, Andrew Poulton, Andrew Ryan, Ankit Ramchandani, Annie Franco, Apara-jita Saraf, Arkabandhu Chowdhury, Ashley Gabriel, Ashwin Bharambe, Assaf Eisenman, Azadeh Yaz-dan, Beau James, Ben Maurer, B. Leonhardi, Bernie Huang, Beth Loyd, Beto de Paola, Bhargavi Paranjape, Bing Liu, Bo Wu, B. Ni, Braden Han-cock, Bram Wasti, Brandon Spence, Brani Stojkovic, Brian Gamido, Britt Montalvo, Carl Parker, Carly Burton, Catalina Mejia, Changhan Wang, Changkyu Kim, Chao Zhou, Chester Hu, Ching-Hsiang Chu, Chris Cai, Chris Tindal, Christoph Feichtenhofer, Damon Civin, Dana Beaty, Daniel Kreymer, Daniel Li, Danny Wyatt, David Adkins, David Xu, Davide Tes-tuggine, Delia David, Devi Parikh, Diana Liskovich, Didem Foss, Dingkang Wang, Duc Le, Dustin Hol-land, Edward Dowling, Eissa Jamil, Elaine Mont-gomery, Eleonora Presani, Emily Hahn, Emily Wood, Erik Brinkman, Esteban Arcaute, Evan Dunbar, Evan Smothers, Fei Sun, Felix Kreuk, Feng Tian, Firat Ozgenel, Francesco Caggioni, Francisco Guzmán, Frank J. Kanayet, Frank Seide, Gabriela Medina, Gabriella Schwarz, Gada Badeer, Georgia Swee, Gil Halpern, Govind Thattai, Grant Herman, G. Sizov, Guangyi, Guna Zhang, Lakshminarayanan Hamid, Han Shojanazeri, Han Zou, Hanwen Wang, Haroun Zha, Harrison Habeeb, Helen Rudolph, Henry Suk, Hunter Aspegren, Ibrahim Goldman, Igor Damlaj, Igor Molybog, Irina-Elena Tufanov, Itai Veliche, Jake Gat, James Weissman, Geboski James, Japhet Kohli, Jean-Baptiste Asher, Gaya Jeff, Jeff Marcus, Jennifer Tang, Jenny Chan, Zhen Jeremy, J. Reizenstein, Jessica Teboul, Zhong Jian, Jingyi Jin, Joe Yang, Jon Cummings, Carvill Jon, Jon Shepard, J. McPhie, Torres Josh, Junjie Ginsburg, Kai Wang, Kam Wu, Hou Karan, Karthik Saxena, Kartikay Prasad, Katayoun Khan-delwal, Kathy Zand, Kaushik Matosich, Kelly Veeraraghavan, Keqian Michelena, Kun Li, Kunal Huang, Kushal Chawla, Kyle Lakhotia, Lailin Huang, Lakshya Chen, Lavender A Leandro Garg, Lee Silva, Lei Bell, Liangpeng Zhang, Licheng Guo, Liron Yu, L. Moshkovich, Madian Wehrstedt, Manav Khabsa, Manish Avalani, Maria Bhatt, Martynas Tsim-poukelli, Matan Mankus, Matthew Hasson, Matthias Lennie, M. Reso, Maxim Groshev, Maya Naumov, Meghan Lathi, Michael L Keneally, Michal Seltzer, M. Valko, Mihir Restrepo, Mik Patel, Mik Vyatskov, Mike Samvelyan, Mike Clark, Mike Macey, Miquel Wang, Jubert Mo, Mo Metanat, Mun-ish Rastegari, Nandhini Bansal, Natascha Santhanam, Parks Natasha, Navyata White, Nayan Bawa, Nick Singhal, Nicolas Egebo, Usunier, Nikolay Pavlovich, Laptev Ning, Ning Dong, Norman Zhang, Oleg Cheng, Olivia Chernoguz, Omkar Hart, Ozlem Salpekar, Parkin Kalinli, Parth Kent, Paul Parekh, Pa-van Saab",2025,https://doi.org/10.18653/v1/2025.naacl-srw.52,Other questionnaires,A: Not addressed,Japan,Not Specified/Other,Llama Family; Qwen Family; OLMo Family,Only Open Source,,Llama-3.1-70b,Prompt Engineering,,,,"Not Applicable, No FT",Not reported (the paper does not provide information on the size of the training dataset used to train the language models),,Aggregated-distributional level Alignment,"Correlation Metrics;
+Distribution Comparison Metrics","Spearman correlation;
+Rank correlation;
+Total variation distance","Correlation Metrics;
+Distribution Comparison Metrics","Spearman correlation;
+Rank correlation;
+Total variation distance",No,LLM as Conditional Valid Substitutes
+Representation Bias in Political Sample Simulations with Large Language Models,"Weihong Qi, Hanjia Lyu, Jiebo Luo",2025,https://doi.org/10.1145/3701716.3715591,Established Surveys,A: Not addressed,United States; China,"Political Attitudes, Values and Behaviors",OpenAI GPT Family,Only Closed Source,GPT-3.5-Turbo,,Prompt Engineering,,Self-reported data:  Demographic; Self-reported data:  Political characteristics,Age; Sex/Gender; Race/Ethnicity/Nationality; Education; Income/Wealth; Religion/Religiosity,"Not Applicable, No FT",Not reported,,Individual-level Alignment,Predictive Performance Metrics,Accuracy,Predictive Performance Metrics,Accuracy,No,LLM as Conditional Valid Substitutes
+SeSaMe: A Framework to Simulate Self-Reported Ground Truth for Mental Health Sensing Studies,"Choube, A, Das Swain, V, Mishra, V",2024,https://doi.org/10.1109/ACII63134.2024.00031,Other questionnaires,A: Not addressed,United States,Healthcare & Well-Being,OpenAI GPT Family,Only Closed Source,GPT-4,,Prompt Engineering,,Self-reported data:  Demographic; Self-reported data:  Psychological traits,Age; Sex/Gender,"Not Applicable, No FT",Not reported,,Aggregated-distributional level Alignment,Correlation Metrics,Spearman correlation,Correlation Metrics,Spearman correlation,No,LLM as Conditional Valid Substitutes
+Simulating Human Opinions with Large Language Models,"Kaiser, C, Kaiser, J, Manewitsch, V, Rau, L, Schallner, R",2025,https://doi.org/10.1145/3708319.3733685,Other questionnaires,D: Novel / Unpublished survey instrument,,Consumer Preferences,OpenAI GPT Family,Only Closed Source,GPT-4o,,Prompt Engineering,,Self-reported data:  Demographic,Age; Sex/Gender; Race/Ethnicity/Nationality; Education; Income/Wealth; Region/Geography; Occupation/Employment,"Not Applicable, No FT",Not reported,,Both individual and distributional alignment Levels,"Predictive Performance Metrics;
+Statistical Inference","Accuracy;
+ANOVA;
+Brown-Forsythe test","Predictive Performance Metrics;
+Statistical Inference","Accuracy;
+ANOVA;
+Brown-Forsythe test",No,LLM as Conditional Valid Substitutes
+Simulating Public Opinion: Comparing Distributional and Individual-Level Predictions from LLMs and Random Forests,"Miranda, Fernando, Balbi, Pedro Paulo",2025,https://doi.org/10.3390/e27090923,Established Surveys,A: Not addressed,United States,"Political Attitudes, Values and Behaviors; Social Attitudes, Values and Trust; Economic Preferences; Consumer Preferences; Healthcare & Well-Being",Google Family; Qwen Family,Both Open and Closed Source,,,Prompt Engineering,,Self-reported data:  Demographic; Self-reported data:  Political characteristics; Self-reported data:  Psychological traits,Age; Sex/Gender; Race/Ethnicity/Nationality; Education; Income/Wealth,"Not Applicable, No FT",Not reported,,Both individual and distributional alignment Levels,"Predictive Performance Metrics;
+Correlation Metrics;
+Distribution Comparison Metrics","F1 score;
+Cramér's V;
+Jensen-Shannon divergence","Predictive Performance Metrics;
+Correlation Metrics;
+Distribution Comparison Metrics","F1 score;
+Cramér's V;
+Jensen-Shannon divergence",No,LLM as Valid Substitutes
+Specializing Large Language Models to Simulate Survey Response Distributions for Global Populations,"Yong Cao, Haijiang Liu, Arnav Arora, Isabelle Augenstein, Paul Rottger, Daniel Hershcovich",2025,https://doi.org/10.48550/arXiv.2502.07068,Established Surveys,A: Not addressed,Not Specified/Global,"Social Attitudes, Values and Trust",Llama Family; Qwen Family; DeepSeek Family; Vicuna Family,Only Open Source,,Llama-3-8b,Model-level Fine-Tuning,Self-reported data,Self-reported data:  Attitudes and Beliefs,,Survey data: World Values Survey (2017-2022),"Data from 65 countries (all countries with more than 1,000 respondents; Northern Ireland excluded); over 80,000 respondents total. 259 questions used (excluding demographics and notes for interviewers). 
+
+Questions divided into: Q1 (150 questions for training), Q2 (35 questions for validation), Q3 (59 questions for testimg). 
+Countries divided into: C1 (46 countries for training), C2 (8 African countries for testing), C3 (11 medium-GDP countries for testing). 
+
+Training entries: 6,841 (C1×Q1); 
+Validation entries: 1,586 (C1×Q2). 
+
+Training on a single A100 GPU; batch size 16 for Llama3 and Vicuna1.5-7B, 4 for Vicuna1.5-13B; AdamW optimizer; learning rate 1e-4; LoRA rank 8, lora_alpha 32, dropout rate 0.05.","65; 1,000; 80,000; 259; 1; 150; 2; 35; 3; 59; 1; 46; 2; 8; 3; 11; 6,841; 1; 1; 1,586; 1; 2; 100; 16; 3; 1.5; 7; 4; 1.5; 13; 1; 4; 8,; 32,; 0.05",Aggregated-distributional level Alignment,Distribution Comparison Metrics,"Wasserstein distance;
+KL divergence;
+Jensen-Shannon divergence;
+Cross-entropy;
+Entropy",Distribution Comparison Metrics,"Wasserstein distance;
+KL divergence;
+Jensen-Shannon divergence;
+Cross-entropy;
+Entropy",No,LLM as Invalid Substitutes
+"Synthesizing Public Opinions with LLMs: Role Creation, Impacts, and the Future of Edemorcacy","Rabimba Karanjai, Boris Shor, Amanda Austin, Ryan Kennedy, Yang Lu, Lei Xu, Weidong Shi",2025,https://doi.org/10.1109/ICEDEG65568.2025.11081685,Established Surveys,C: Temporal exclusion (postdates training cutoff),United States,"Political Attitudes, Values and Behaviors",Llama Family; Google Family,Both Open and Closed Source,,Llama-3.3-70b,Prompt Engineering,,Self-reported data:  Psychological traits,,"- Dataset description: Domain-specific data from public opinion polling and political attitude surveys
+- Dataset name: Not specified",Not reported,,Aggregated-distributional level Alignment,Predictive Performance Metrics,Accuracy,Predictive Performance Metrics,Accuracy,No,LLM as Valid Substitutes
+Synthetic Personas: Enhancing Demographic Response Simulation through Large Language Models and Genetic Algorithms,"Morten Grundetjern, Per-Arne Andersen, Morten Goodwin",2025,https://doi.org/10.5121/ijci.2025.140202,Other questionnaires,A: Not addressed,Norway,Economic Preferences; Technology Usage & Capabilities,,,,,Prompt Engineering,,Self-reported data:  Demographic; Self-reported data:  Attitudes and Beliefs; Self-reported data:  Psychological traits,Age; Sex/Gender; Education; Income/Wealth; Region/Geography; Occupation/Employment,"Not Applicable, No FT",15 questions,15,Aggregated-distributional level Alignment,"Predictive Performance Metrics;
+Correlation Metrics","Accuracy;
+MAE;
+Pearson correlation","Predictive Performance Metrics;
+Correlation Metrics","Accuracy;
+MAE;
+Pearson correlation",No,LLM as Valid Substitutes
+Synthetic Replacements for Human Survey Data? The Perils of Large Language Models,"Bisbee, J, Clinton, JD, Dorff, C, Kenkel, B, Larson, JM",2024,https://doi.org/10.1017/pan.2024.5,Established Surveys,B: Acknowledged only (no mitigation step),United States,"Social Attitudes, Values and Trust",OpenAI GPT Family; Falcon Family,Both Open and Closed Source,GPT-4; GPT-3.5-Turbo,,Prompt Engineering,,Self-reported data:  Demographic; Self-reported data:  Political characteristics,Age; Sex/Gender; Race/Ethnicity/Nationality; Education; Income/Wealth,"Not Applicable, No FT",Not reported,,Both individual and distributional alignment Levels,"Predictive Performance Metrics;
+Correlation Metrics;
+Descriptive Statistics","F1 score;
+Partial correlation;
+Descriptive Statistics","Predictive Performance Metrics;
+Correlation Metrics;
+Descriptive Statistics","F1 score;
+Partial correlation;
+Descriptive Statistics",Yes,LLM as Invalid Substitutes
+Synthetic Voices: Evaluating the Fidelity of LLM-Generated Personas in Representing People's FinancialWellbeing,"Kaur, Arshnoor; Aird, Amanda; Borman, Harris; Nicastro, Andrea; Leontjeva, Anna; Pizzato, Luiz; Jermyn, Dan",2025,https://doi.org/10.1145/3699682.3728339,Other questionnaires,A: Not addressed,Australia,Economic Preferences; Healthcare & Well-Being,OpenAI GPT Family; Llama Family; Mistral Family,Both Open and Closed Source,GPT-4; GPT-3.5-Turbo,Llama-3.1-405b; Llama-3.1-70b,Prompt Engineering,,Self-reported data:  Demographic; Self-reported data:  Attitudes and Beliefs,Age; Sex/Gender; Education; Household/Family,"Not Applicable, No FT",Not reported,,Aggregated-distributional level Alignment,"Correlation Metrics;
+Descriptive Statistics","Correlation (not specified);
+Descriptive Statistics","Correlation Metrics;
+Descriptive Statistics","Correlation (not specified);
+Descriptive Statistics",No,LLM as Invalid Substitutes
+Towards realistic evaluation of cultural value alignment in large language models: Diversity enhancement for survey response simulation,"Liu, HJ, Cao, Y, Wu, X, Qiu, C, Gu, JG, Liu, MF, Hershcovich, D",2025,https://doi.org/10.1016/j.ipm.2025.104099,Established Surveys,A: Not addressed,United States; China,"Social Attitudes, Values and Trust",Claude / Anthropic Family; Llama Family; Mistral Family; ChatGLM Family; Baichuan Family; WizardLM Family,Both Open and Closed Source,,Llama-3-8b,Prompt Engineering,,Self-reported data:  Demographic,Age; Sex/Gender,"Not Applicable, No FT","- Number of questions: over 1153
+- Number of human annotations: up to 12,000
+- Number of respondents in Pew Research Center's American Trends Panel: over 10,000
+- Number of respondents in USA Today/Ipsos Poll: 1023","1153; 12,000; 10,000; 1023",Aggregated-distributional level Alignment,Distribution Comparison Metrics,KL divergence,Distribution Comparison Metrics,KL divergence,No,LLM as Conditional Valid Substitutes
+Using GPT for Market Research,"James Brand, A. Israeli, Donald Ngwe",2024,https://doi.org/10.2139/ssrn.4395751,Prolific custom questionnaires,C: Temporal exclusion (postdates training cutoff),United States,Consumer Preferences,OpenAI GPT Family; Claude / Anthropic Family; Llama Family,Both Open and Closed Source,GPT-4o; GPT-3.5-Turbo,,Model-level Fine-Tuning,Self-reported data,Self-reported data:  Demographic,Age; Sex/Gender; Race/Ethnicity/Nationality; Education; Income/Wealth; Household/Family,Survey data from own market research studies,"3,600 responses pairs; 3,624 response pairs; 3,552 response pairs
+
+(1) Toothpaste (Study 1A [train] → Study 1B [test]): 300 participants × 12 choice tasks = 3,600 response pairs used to fine-tune GPT-3.5 Turbo. Evaluated on Study 1B (302 participants; toothpaste with new flavors: cucumber and pancake).
+(2) Laptop, attribute-level (Study 2A [train] → Study 2B and 2C [test]): 302 participants × 12 choice tasks ≈ 3,624 response pairs. Evaluated on Study 2B (300 participants; laptops with built-in LCD projector) and Study 2C (300 participants; tablets).
+(3) Laptop, demographic-conditioned (Study 2A with income/gender labels [train] → Study 2B by subgroup [test]): Out of 302 Study 2A responses, 6 cases with missing income or gender were omitted, leaving 296 participants × 12 choice tasks ≈ 3,552 response pairs. Prompts were modified to include each respondent's income bracket and gender. The fine-tuned model was queried with 30 responses per demographic group.","3,600; 3,624; 3,552; 1; 1; 1; 300; 12; 3,600; 3.5; 1; 302; 2; 2; 2; 2; 302; 12; 3,624; 2; 300; 2; 300; 3; 2; 2; 302; 2; 6; 296; 12; 3,552; 30",Aggregated-distributional level Alignment,Descriptive Statistics,Descriptive Statistics,Descriptive Statistics,Descriptive Statistics,No,LLM as Conditional Valid Substitutes
+Utilizing Large Language Models for Social Simulations: Responding to the Degree of Freedom Questionnaire with ChatGPT,"Jaeyoun You, Bongwon Suh",2024,https://doi.org/10.17210/jhsk.2024.09.19.3.49,Established Surveys,A: Not addressed,Not Specified/Global,"Social Attitudes, Values and Trust",OpenAI GPT Family,Only Closed Source,,,Prompt Engineering,,Self-reported data:  Attitudes and Beliefs,,"Not Applicable, No FT",Not reported,,Aggregated-distributional level Alignment,Correlation Metrics,"Spearman correlation;
+Rank correlation",Correlation Metrics,"Spearman correlation;
+Rank correlation",No,LLM as Conditional Valid Substitutes
+ValueSim: Generating Backstories to Model Individual Value Systems,"Bangde Du, Ziyi Ye, Zhijing Wu, Jankowska Monika, Shuqi Zhu, Qingyao Ai, Yujia Zhou, Yiqun Liu",2025,https://doi.org/10.48550/arXiv.2505.23827,Established Surveys,A: Not addressed,Not Specified/Global,"Political Attitudes, Values and Behaviors; Social Attitudes, Values and Trust; Economic Preferences; Healthcare & Well-Being",OpenAI GPT Family; Llama Family; Qwen Family; DeepSeek Family,Both Open and Closed Source,GPT-3.5-Turbo,Llama-3.1-8b,Prompt Engineering,,Self-reported data:  Demographic; Self-reported data:  Attitudes and Beliefs; Self-reported data:  Psychological traits,Age; Sex/Gender; Education; Income/Wealth,"- Dataset description: World Values Survey (WVS) Wave 7 dataset
+- Dataset name: World Values Survey (WVS)","80% of 97,220 individuals (approximately 77,776 individuals)","80; 97,220; 77,776",Individual-level Alignment,Predictive Performance Metrics,"Accuracy;
+MAE",Predictive Performance Metrics,"Accuracy;
+MAE",No,LLM as Conditional Valid Substitutes
+Virtual Personas for Language Models via an Anthology of Backstories,"Suhong Moon, Marwa Abdulhai, Minwoo Kang, Joseph Suh, Widyadewi Soedarmadji, Eran Kohen Behar, David M. Chan",2024,https://doi.org/10.48550/arXiv.2407.06576,Established Surveys,A: Not addressed,,"Social Attitudes, Values and Trust; Consumer Preferences; Healthcare & Well-Being",OpenAI GPT Family; Llama Family; Mistral Family,Both Open and Closed Source,GPT-4o; Text-Davinci,Llama-3-70b,Prompt Engineering,,Self-reported data:  Demographic; Self-reported data:  Psychological traits,Age; Sex/Gender; Race/Ethnicity/Nationality; Education; Income/Wealth; Household/Family,"Not Applicable, No FT",Not reported,,Aggregated-distributional level Alignment,Distribution Comparison Metrics,Wasserstein distance,Distribution Comparison Metrics,Wasserstein distance,No,LLM as Conditional Valid Substitutes
+"Vox Populi, Vox AI? Using Large Language Models to Estimate German Vote Choice","von der Heyde, L, Haensch, AC, Wenz, A",2025,https://doi.org/10.1177/08944393251337014,Established Surveys,C: Temporal exclusion (postdates training cutoff),Germany,"Political Attitudes, Values and Behaviors",OpenAI GPT Family,Only Closed Source,GPT-3.5; Text-Davinci,,Prompt Engineering,,Self-reported data:  Demographic; Self-reported data:  Attitudes and Beliefs; Self-reported data:  Political characteristics,Age; Sex/Gender; Education; Income/Wealth; Region/Geography; Occupation/Employment,"Not Applicable, No FT",Not reported,,Both individual and distributional alignment Levels,"Predictive Performance Metrics;
+Descriptive Statistics;
+Statistical Models & Regression","Precision;
+Recall;
+F1 score;
+Descriptive Statistics;
+Multinomial / Logistic Regression","Predictive Performance Metrics;
+Descriptive Statistics;
+Statistical Models & Regression","Precision;
+Recall;
+F1 score;
+Descriptive Statistics;
+Multinomial / Logistic Regression",Yes,LLM as Invalid Substitutes
+Whose opinions do language models reflect?,"Santurkar, Shibani; Durmus, Esin; Ladhak, Faisal; Lee, Cinoo; Liang, Percy; Hashimoto, Tatsunori",2023,https://dl.acm.org/doi/10.5555/3618408.3619652,Established Surveys,A: Not addressed,United States,"Political Attitudes, Values and Behaviors; Social Attitudes, Values and Trust; Economic Preferences; Healthcare & Well-Being",OpenAI GPT Family; AI21 Jurassic Family,Only Closed Source,Text-Davinci,,Prompt Engineering,,Self-reported data:  Demographic; Self-reported data:  Political characteristics,Age; Sex/Gender; Race/Ethnicity/Nationality; Education; Income/Wealth,"Not Applicable, No FT",Not reported,,Aggregated-distributional level Alignment,Distribution Comparison Metrics,Wasserstein distance,Distribution Comparison Metrics,Wasserstein distance,No,LLM as Invalid Substitutes
+WorldValuesBench: A Large-Scale Benchmark Dataset for Multi-Cultural Value Awareness of Language Models,"Wenlong Zhao, Debanjan Mondal, Niket Tandon, Danica Dillion, Kurt Gray, Yuling Gu",2024,https://doi.org/10.48550/arXiv.2404.16308,Established Surveys,A: Not addressed,Not Specified/Global,"Social Attitudes, Values and Trust",OpenAI GPT Family; Mistral Family; Vicuna Family; Alpaca Family,Both Open and Closed Source,GPT-3.5-Turbo,,Prompt Engineering,,Self-reported data:  Demographic,Education; Region/Geography,"Not Applicable, No FT",Not reported,,Aggregated-distributional level Alignment,Distribution Comparison Metrics,Wasserstein distance,Distribution Comparison Metrics,Wasserstein distance,No,LLM as Invalid Substitutes

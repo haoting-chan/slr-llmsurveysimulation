@@ -1,0 +1,21 @@
+# --- Secrets ---
+.env
+
+# --- Local environment / editor ---
+.venv/
+.vscode/
+.claude/
+**/__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.Rproj.user
+
+# --- Local working files (kept on disk, not part of the replication package) ---
+# Includes ASReview project files (contain screener identities)
+data/_local/
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*

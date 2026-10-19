@@ -1,0 +1,27 @@
+# Python 3.13 (tested with 3.13.16). Versions are those used to produce the results.
+
+# --- Core: needed for SLR2 (screening) and SLR3 (extraction & analysis) ---
+pandas==2.3.3
+numpy==2.3.3
+matplotlib==3.10.7
+seaborn==0.13.2
+scikit-learn==1.7.2
+regex==2026.1.15
+openpyxl==3.1.5
+xlrd==2.0.2
+python-dotenv==1.1.1
+
+# --- Jupyter ---
+jupyterlab==4.4.9
+ipykernel==7.0.0
+nbconvert==7.16.6
+
+# --- Only needed to re-run the database searches in SLR1 (requires API keys, see .env.example) ---
+requests==2.32.5
+semanticscholar==0.11.0
+bibtexparser==1.4.3
+rispy==0.10.0
+arxiv
+# Clarivate Web of Science Starter API client: distribution `clarivate-wos-starter-python-client`
+# (version used: 1.0.0), imported as `clarivate.wos_starter.client`. Not on PyPI; install it
+# following Clarivate's developer portal instructions (https://developer.clarivate.com/apis/wos-starter).

@@ -1,0 +1,201 @@
+﻿Column,Prompts for Elicit
+Survey Dataset,"Identify the survey dataset or questionnaires that provide the human responses used in the study. 
+
+Return the full name of the dataset, including wave, round, and year if available. 
+Examples of the desired format are: 
+- European Social Survey, Round 10 (2020) 
+- World Values Survey Wave 7 
+- American National Election Studies (ANES) 2016 and 2020 
+
+If multiple survey datasets are used, list all of them.
+If the authors use their custom questionnaires and it is not a standard named survey panel, write: Unique Questionnaires – [very short description, for example: Career Exploration survey questions from the ‘‘AI-based Counseling Data for Student Career Exploration’’]. 
+If no survey data is used, write: No survey dataset used. If it is impossible to tell, write: Not reported."
+Survey Population,"Identify the main human population whose survey responses or behaviours the LLM simulates, predicts, or imputes. 
+
+Return a short description of the population in natural language, similar to: 
+- UK household respondents 
+- Americans 
+- Americans and Chinese citizens 
+- Korean students (elementary to high school) 
+- Japanese customers 
+
+Include country or region and the group description when available (for example: “German adults in an online panel” or “US college students”). 
+
+If the study uses multiple distinct populations, list all of them separated by a semicolon and a space, ordered from most central to least central. 
+If the population is only described in very general terms, write the most specific phrase available (for example: “online survey respondents” or “general adult population”). 
+If no human population is involved or it is impossible to tell, write: `Not reported`."
+Application: Predicted variables,"Identify what variables the LLM is used to simulate, predict, or impute. Focus only on the outputs of the LLM (the dependent or target variables), not on input features or control variables.
+
+Return a description of each predicted variable. For Example:
+- ACS demographic and socioeconomic indicators
+- Feeling thermometer scores (0-100) toward sociopolitical groups
+- Willingness to purchase financial products and online game spending
+- Values-response and election-vote prediction
+- Participant choice in the final (sixth) scenario of each Stated Preference (SP) experiment set
+
+If there are multiple predicted variables, list all of them separated by a semicolon and a space, ordered from most central to least central.
+If the LLM is only used to generate text or features that are then used by another model, but it does not directly simulate or predict survey responses or behavioural outcomes, write: `No LLM predicted variables`.
+If the information is not clearly described, write: `Not reported`."
+LLMs Used,"List all large language models that were actually used in the study (not just mentioned). For each model, provide: Model name (as reported in the paper), Model version, Model parameter size, and Version or release date or access date (if explicitly stated; do not infer)
+
+Return one single cell as a semicolon-separated list, where each model follows this exact format:
+- Model name = [name as reported]-[parameter size]; Version or release date = [Version or release or access date]
+
+Use all tables and all columns within the paper.
+Only include information explicitly stated in the paper.
+
+If a field is not reported, write ‘NR’ (not reported). Return the results as a structured list."
+LLM Persona Adaptation Strategy,"Identify every method used to construct synthetic personas for an LLM that simulates human respondents. Use these labels:
+• Prompt Engineering,
+• Model-level Fine-Tuning,
+• None reported
+
+Definitions and keywords to guide the choice:
+- Prompt Engineering: Persona is created only through prompts or templates. Examples: role or system prompts, “role play as…”, demographic slots, few-shot exemplars, chain-of-thought in the prompt, temperature settings. No weight updates or adapters.
+- Model-level Fine-Tuning: Model weights or adapters are fine-tuned to encode personas or survey behaviour. Examples: SFT or instruction tuning on persona or survey corpora, LoRA or other PEFT adapters, continual pretraining, DPO, PPO, RLHF.
+
+If the paper does not describe a persona construction method, choose ""None reported"". 
+If the approach clearly differs from all the definitions, choose ""Others"" and explain what this other method is."
+LLM Training / Prompting Input,"Identify every type of input used to generate synthetic personas in this study. Use these labels:
+• Sociodemographic data,
+• Political characteristics,
+• Psychological / personality covariates,
+• Domain-specific behaviors and preferences,
+• Narrative / contextual texture,
+• Non-self-reported data / non-survey data
+
+Definitions and keywords to guide the choice: 
+• Sociodemographic data: age, gender, race/ethnicity, education, income, region, household composition, urbanicity, occupation, employment status, class, income brackets.
+• Political characteristics: party identification, ideological self-placement, issue positions, turnout, and political interest.​
+• Psychological / personality covariates: Big‑Five–like traits, risk preferences, moral foundations, fairness norms (more explicit in cultural/econ-experiment work).​
+• Domain-specific behaviors and preferences: mobility patterns, consumption habits, technology usage, health behaviors, etc., depending on the application domain.​
+• Narrative / contextual texture: time or date, biography, daily routines, goals, challenges, social environment, used especially in agentic simulations
+• Non-self-reported data / non-survey data: external data not gathered from surveys, such as web usage, web tracked data, social media usage, social media data
+
+For each category identified, specify the item actually used. For example:
+""...{Input Type}...: ...{specify the item}...""
+
+If the study uses multiple input types, select all that apply and record each relevant category.
+If none of the above categories adequately describe the inputs used, select “Other” and briefly describe the input approach in your own words.
+If the paper discusses synthetic personas but does not specify what inputs were used to generate them, record “Not specified.”"
+Training Dataset,"Determine whether the authors of this paper fine-tunes or trains a language model model to elicit synthetic personas.
+
+If the paper fine-tunes or trains a language model, extract the name or description of the data used for fine-tuning language model to elicit synthetic personas for survey responses.
+
+Focus specifically on:
+- Human data
+- Survey data
+- Preference data
+- Any dataset explicitly used to fine-tune or train the model
+
+Do NOT include:
+- Prompt engineering methods
+- Inference-time prompting
+- Evaluation datasets unless they are also used for training
+
+Output format:
+- Dataset description: [verbatim or concise description from the paper]
+- Dataset name: [name if explicitly provided, otherwise ""Not specified""]
+
+If the paper does not fine-tune or train a model, output exactly:
+Not Applicable, No FT"
+Training Dataset Size,"Extract the size of the training data used to train the language model to elicit synthetic personas for survey responses.
+
+Report any explicitly stated size information, such as:
+- Number of respondents
+- Number of survey responses
+- Number of documents or records
+- Number of tokens
+- Approximate scale (for example, “hundreds of responses”)
+
+Use only information explicitly stated in the paper or its supplementary materials.
+Do not infer, estimate, or rely on general knowledge.
+
+If the paper does not report any training data size, write:
+Not reported"
+Evaluation Metrics,"Identify how the authors evaluate the LLM’s synthetic outputs against human data. Focus on the metrics and statistical tests used to compare LLM-generated responses with actual human responses or ground truth.
+
+Return a short list of the names of all metrics and tests used to compare LLM-generated responses with actual human responses or ground truth.
+
+For example:
+- Accuracy, F1, Chi square test
+- MAD outlier counts, EBICglasso partial correlation networks with node predictability R² and RMSE, Bartlett test, KMO
+- Mean and variance matching, Mean Absolute Deviation, pairwise correlation preservation on the individual level, Accuracy
+- Normalized entropy, Kullback–Leibler (KL) divergence
+
+Include only metrics that were used to compare LLM-generated responses with actual human responses or ground truth.
+
+If multiple metrics are used, list all of them separated by a semicolon and a space, ordered from most central to least central.
+If only qualitative or descriptive comparison is reported (for example, visual inspection of plots, example responses) and no formal metric is given, write: `Qualitative comparison only`.
+If no evaluation of LLM outputs against human data is reported, or it is impossible to tell, write: `Not reported`."
+Evaluation Objective,"Determine whether the paper compares LLM-generated outputs to human data.
+
+If yes, identify the main evaluation objective of the paper in the context of LLM-generated outputs vs human output data.
+
+If there are several clearly stated objectives or research questions, list them in order of importance, separated by a semicolon and a space.
+
+If the LLM is evaluated but only in a very general way, write a brief generic description such as: `General comparison of LLM and human survey responses.`
+
+If the paper does not evaluate LLM outputs against human data, write: `No evaluation against human data.`"
+Level of Alignment,"Step 1: Extract all passages describing the evaluation of LLM-generated or LLM-imputed survey responses against human data. 
+
+Step 2: Decide what level of alignment the paper measures: 
+• Individual-level alignment (same person comparison; respondent-level ground truth),
+• Aggregated-distributional-level alignment 
+ (group/population distribution comparison; no one-to-one respondent matching),
+• Both Individual-level and Aggregated-distributional-level
+• Neither.
+
+Decision rules:
+- If the paper compares each synthetic in-silico respondent's predicted answers to each respondent’s actual human observed answers → ""Individual-level"".
+- If the paper reports differences in aggregated or distributional proportions/means of the synthetic population versus the actual human population,  without linking to specific respondents → ""Aggregated-distributional-level""."
+Results: Key Points,How well do LLM-generated or LLM-imputed responses match actual human survey responses or other ground-truth human data?
+Results: LLM Capabilities,"Report the authors' own concluding assessment of whether LLM-generated responses are valid substitutes for human survey responses or human data.
+
+Base your output strictly on language in the abstract, conclusion, discussion, or limitations sections — do not infer or evaluate independently.
+
+[OUTPUT FORMAT]
+1. Category: ""they work"" / ""they don't work"" / ""sometimes they work""
+2. Author quote or paraphrase: A direct quote or close paraphrase of the sentence(s) in which the authors state their conclusion.
+
+[OUTPUT CATEGORIES & DEFINITIONS]
+- ""they work"": The authors themselves conclude or recommend that LLMs
+  can serve as reliable proxies for human respondents, at least within
+  the scope of their study.
+- ""they don't work"": The authors themselves conclude that LLM outputs
+  do not adequately replicate human responses, or explicitly caution
+  against using LLMs as substitutes for human data.
+- ""sometimes they work"": The authors themselves qualify their conclusion —
+  noting that alignment holds under certain conditions, for certain
+  subgroups, topics, or tasks, but not others.
+
+If the authors do not state an explicit conclusion on this question,
+output: ""not stated"" and leave fields 2 blank."
+Results: Empirical,"Summarise the paper’s empirical findings that compare LLM synthetic outputs to real human data.
+
+Include:
+- All reported quantitative performance metrics (e.g. accuracy, BLEU, F1, human preference rates), including values and direction of difference.
+- Any qualitative judgments, paraphrased clearly and neutrally if no numerical metrics are provided.
+
+Output only the empirical performance of direct comparison between LLM outputs and human data.
+
+If human evaluation or preference judgments of LLM outputs versus human outputs were compared, write so.
+
+If no comparison to human data is reported, output exactly: `Not evaluated - no results on LLM synthetic output quality reported.`"
+Relational Alignment,"Step 1: Extract all passages where the paper examines whether covariates (e.g. demographics, attitudes, ideology) predict LLM responses in the same way they predict human survey responses.
+
+Step 2: Decide:
+- ""Covariate Alignment"" — if the paper estimates a model (e.g. regression, multilevel model) on both LLM and human responses and compares coefficients, predicted probabilities, or covariate-response relationships, do the same variables drive responses in the same way?
+- ""None"" — if the paper only compares responses/distributions without examining covariate-response structure"
+Data Contatmination,"Does this paper address the risk that the survey questionnaire, item content, or target population data used to prompt/evaluate the LLM were present in the model's training corpus (i.e., data leakage/training data contamination)? Classify the paper's approach using exactly one of the following categories, and quote the specific sentence(s) that justify your classification. If no relevant text exists, answer ""Not addressed"" and write ""no supporting quote found.""
+
+Categories:
+A — Not addressed: No discussion of leakage/contamination risk anywhere in the paper.
+B — Acknowledged only: Authors mention leakage as a possible confound or limitation but describe no specific step taken to reduce it.
+C — Temporal exclusion: Authors state or imply the survey/data/instrument postdates the model's training cutoff.
+D — Novel/unpublished/proprietary instrument: Authors state the questionnaire or item set was newly created, unpublished, or not publicly indexed online, specifically to reduce leakage risk.
+E — Concurrent primary data collection: Authors collected new human survey data at the same time as querying the LLM, using it as a leakage-resistant benchmark.
+F — Memorization probe: Authors directly tested whether the model could reproduce/recognize the survey instrument or specific items (e.g., asked the model to recite items, canary-string test, verbatim-recall check).
+G — Other mitigation: A leakage-reduction strategy not covered above (describe briefly).
+
+Output format: `Category | Quote | Page/section if available.`"
