@@ -19,7 +19,7 @@ The review follows the PRISMA workflow (flow diagram: [docs/PRISMA_flow_diagram.
 ## Repository structure
 
 ```
-├── notebooks/            Analysis notebooks (SLR1 → SLR2 → SLR3)
+├── notebooks/            Python notebooks (SLR1 → SLR2 → SLR3)
 ├── data/
 │   ├── search/           Search stage: retrieved records, recall table, reference set, records from other methods
 │   ├── screening/        Screening stage: ASReview exports, validation samples, full-text eligibility
