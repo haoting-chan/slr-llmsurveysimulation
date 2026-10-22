@@ -8,13 +8,13 @@ Replication materials and literature databases for RESEARCH SYNTHESIS -- *LLM-Ba
 
 ## Overview
 
-The review follows the PRISMA workflow (flow diagram: [docs/PRISMA_flow_diagram.pptx](docs/PRISMA_flow_diagram.pptx)) and is implemented in three Jupyter notebooks, run in order:
+The review follows the PRISMA workflow (flow diagram: [docs/Prisma Flow Diagram.png](<docs/Prisma Flow Diagram.png>), editable source in [docs/Diagrams.pptx](docs/Diagrams.pptx)) and is implemented in three Jupyter notebooks (SLR1–SLR3), run in order:
 
 | Notebook | Stage | Main inputs | Main outputs |
 |---|---|---|---|
-| [SLR1_Database_extraction](notebooks/SLR1_Database_extraction.ipynb) | **Identification**: query Web of Science and Semantic Scholar, validate search-string recall against a reference set of key papers, merge and de-duplicate, pre-screen | Database APIs (keys required), `data/search/LLM - Survey Proxies (key papers).csv` | `data/screening/df_final_prescreen.csv`, `data/search/recall_table_final.csv` |
-| [SLR2_Screening_and_Validation](notebooks/SLR2_Screening_and_Validation.ipynb) | **Screening**: inter-rater validation of title/abstract screening (ASReview), coverage check, preprint handling, merge with records from other methods, full-text eligibility | `data/screening/`, `data/search/` | Screening counts and agreement statistics (in notebook) |
-| [SLR3_DataExtractionAnalysis](notebooks/SLR3_DataExtractionAnalysis.ipynb) | **Data extraction & synthesis**: coding of the 55 included studies, descriptive analyses and cross-tabulations by validity verdict | `data/extraction/DataExtraction_Final*.csv` | `results/figures/*.pdf`, `data/extraction/Master_Coded_Table.csv`, `results/tables/Crosstab_Table_byVerdict.csv` |
+| SLR1: [1_Database_extraction](notebooks/1_Database_extraction.ipynb) | **Identification**: query Web of Science and Semantic Scholar, validate search-string recall against a reference set of key papers, merge and de-duplicate, pre-screen | Database APIs (keys required), `data/search/LLM - Survey Proxies (key papers).csv` | `data/screening/df_final_prescreen.csv`, `data/search/recall_table_final.csv` |
+| SLR2: [2_Screening-Validation](notebooks/2_Screening-Validation.ipynb) | **Screening**: inter-rater validation of title/abstract screening (ASReview), coverage check, preprint handling, merge with records from other methods | `data/screening/`, `data/search/`, `data/extraction/DataExtraction_Final.csv` | Validation samples (`data/screening/df_asreview_sample_*.csv`, `df_asreview_screenerA.csv`); screening counts and agreement statistics (in notebook) |
+| SLR3: [3_DataExtractionAnalysis](notebooks/3_DataExtractionAnalysis.ipynb) | **Data extraction & synthesis**: coding of the 55 included studies, descriptive analyses and cross-tabulations by validity verdict | `data/extraction/DataExtraction_Final*.csv` | `results/figures/*.pdf`, `data/extraction/Master_Coded_Table.csv`, `results/tables/Crosstab_Table_byVerdict.csv` |
 
 ## Repository structure
 
@@ -28,7 +28,7 @@ The review follows the PRISMA workflow (flow diagram: [docs/PRISMA_flow_diagram.
 │   ├── figures/          Figures (PDF)
 │   ├── tables/           Cross-tabulation by validity verdict
 │   └── references.bib    BibTeX bibliography (Zotero export)
-├── docs/                 PRISMA flow diagram, ASReview stopping-rule plot
+├── docs/                 PRISMA flow diagram (PNG; PowerPoint source in Diagrams.pptx), ASReview stopping-rule plot
 ├── requirements.txt      Python dependencies (pinned)
 └── .env.example          Template for API keys (SLR1 only)
 ```
@@ -45,7 +45,7 @@ The review follows the PRISMA workflow (flow diagram: [docs/PRISMA_flow_diagram.
 **`data/screening/`**
 - `df_final_prescreen.csv` – De-duplicated records entering title/abstract screening (input to ASReview).
 - `asreview_results*.csv` – ASReview exports of title/abstract screening decisions (`asreview_results_FINAL.csv` is the final version).
-- `asreview_Validation_Screening_*.csv`, `df_asreview_sample_*.csv`, `asreview_sample.csv`, `asreview_results_initialscreening.csv` – Calibration and inter-rater validation samples.
+- `asreview_Validation_Screening_*.csv`, `df_asreview_sample_*.csv`, `df_final_prescreen_sample.csv`, `asreview_sample.csv`, `asreview_results_initialscreening.csv` – Calibration and inter-rater validation samples.
 - `asreview_results_Validating_ScreenerA_Screening.csv`, `df_asreview_screenerA.csv` – Re-validation of one screener's decisions.
 - `asreview_results_FINAL_ZoteroSupplements.csv`, `recordstofix_preprintstatus.csv` – Metadata supplements and publication-status corrections for preprints.
 - `Fulltext_Screening - Eligibility.csv` – Full-text eligibility decisions.
@@ -92,8 +92,6 @@ SLR1 queries live APIs and **cannot be re-run as-is from this package**:
 - It requires API keys: copy `.env.example` to `.env` and add your own Web of Science Starter API and Semantic Scholar API keys.
 - The retrieved records are included in `data/search/raw_wos/` and `data/search/raw_semanticscholar/`, so section 2 (recall validation) and section 4 (merging and screening) can be re-run from these files without API access.
 - Re-running the queries today will return different results because the databases are continuously updated. See the manuscript for the exact search dates and strings.
-- The research-area chart in SLR1 (section *Web of Science API Call*) uses a Web of Science "Analyze Results" export (`data/search/research_area.csv`) that is not included.
-
 The notebook outputs saved in SLR1 document the original run.
 
 ## Steps that are not computationally reproducible
